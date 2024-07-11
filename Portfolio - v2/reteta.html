@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8"> 
+    <meta name="viewport" initial-scale="1.0">
+    <title>HW1 Rețeta bunicii</title>
+    <style>
+        body {
+            background-color: rgba(207, 160, 71, 0.649);
+            color: rgb(156, 11, 11);
+            font-size: 18px;
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 20px;
+        }
+        hr {
+            border-top: 3px solid rgb(156, 11, 11);
+        }
+        .tab {
+            display: inline-block;
+            margin-left: 40px;
+        }
+        .center {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+        }
+        form {
+            margin-top: 20px;
+            background-color: #fdedd5;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+            margin: 20px auto;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+        input[type="text"], textarea {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            background-color: rgb(156, 11, 11);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #a00;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .nutrition-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .nutrition-table th,
+        .nutrition-table td {
+            padding: 15px;
+            text-align: left;
+        }
+        .nutrition-table th {
+            background-color: rgba(207, 160, 71, 0.649);
+            color: #fff;
+            font-weight: bold;
+        }
+        .nutrition-table tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        .nutrition-table tr:hover {
+            background-color: #ddd;
+        }
+        .back-button {
+            display: block;
+            width: 200px;
+            padding: 10px;
+            background-color: rgb(156, 11, 11);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            text-align: center;
+            margin: 20px auto;
+        }
+        .back-button:hover {
+            background-color: #a00;
+        }
+    </style>
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td><img src="./images/neamneam.png" alt="Set mancare" style="width:150px;height:200px;"></td>
+            <td><h1>Mâncare ca acasă</h1></td>
+        </tr>
+    </table>
+    <hr>
+    <h2>Omletuță de căsuță și un pic de brânză</h2>
+    <p>&emsp;Omletuța de căsuță cu brânză este o rețetă tradițională, 
+        simplă și delicioasă, perfectă pentru un mic dejun sau 
+        pânz savuros. Aceasta combină aromele delicate ale brânzei 
+        de capră sau de oaie cu prospețimea cepei verzi și a 
+        verdețurilor tocate, oferind o explozie de gusturi în 
+        fiecare mușcătură. Rețeta este ușor de preparat și 
+        aduce aminte de mesele copioase de acasă, pregătite cu 
+        dragoste și grijă.</p>
+    <p>Vezi rețeta originală <a href="https://www.libertatea.ro/lifestyle/retete-de-omleta-pentru-fiecare-zi-2939281" target="_blank">aici</a>.</p>
+    
+    <h3>Valoare nutritivă</h3>
+    <table class="nutrition-table">
+        <tr>
+            <th>Componentă</th>
+            <th>Valoare per porție</th>
+        </tr>
+        <tr>
+            <td>Calorii</td>
+            <td>350 kcal</td>
+        </tr>
+        <tr>
+            <td>Proteine</td>
+            <td>20 g</td>
+        </tr>
+        <tr>
+            <td>Grăsimi</td>
+            <td>25 g</td>
+        </tr>
+        <tr>
+            <td>Carbohidrați</td>
+            <td>10 g</td>
+        </tr>
+
+    </table>
+    <h3>Ingrediente</h3>
+    <ul>
+        <li>200 g brânză de capră sau de oaie</li>
+        <li>ulei pentru prăjit</li>
+        <li>1 ceapă</li>
+        <li>8 ouă</li>
+        <li>200 ml bere</li>
+        <li>1 legătură ceapă verde</li>
+        <li>1 legatura verdeaţă tocată mărunt (pătrunjel, mentă, busuioc)</li>
+        <li>1/2 linguriță sare</li>
+        <li>1 vârf de cuţit de piper proaspăt măcinat</li>
+        <li>1 lingură de unt</li>
+        <li>roşii</li>
+        <li>verdeaţă pentru ornat</li>
+      </ul>
+      
+      <h3>Mod de preparare:</h3>
+      <ol>
+          <li>Se curăţă ceapa, se taie în solzişori şi se căleşte în unt.</li>
+          <li>Se sparg ouăle şi se separă albuşul de gălbenuş.</li>
+          <li>Se amestecă gălbenuşurile cu berea şi cu ceapa călită şi se presară cu sare şi piper.</li>
+          <li>Albuşurile se bat spumă, după care se amestecă uşor cu ceapa verde şi verdeaţa tocată mărunt.</li>
+          <li>Se toarnă peste gălbenuşuri şi se amestecă cu grijă cele două compoziţii.</li>
+          <li>Se toarnă, toată odată, într-o tigaie încinsă cu puţin ulei şi se prăjeşte.</li>
+          <br>
+          <img src="./images/oml.webp" alt="Prajirea omletei" style="width:300px;height:220px;" class="center">      
+          <br>
+          <li>Odată prăjită, se taie în triunghiuri.</li>
+          <li>Se pun bucăţile de brânză de capră pe o bucată de omletă şi se acoperă cu o altă bucată de omletă.</li>
+          <li>Se lasă pe o farfurie pentru ca brânza să se înmoaie puţin.</li>
+          <li>Se presară omleta cu verdeaţă şi se serveşte cu roşii.</li>
+      </ol>
+      
+    <img src="./images/omleta.webp" alt="Omleta gata" style="width:500px;height:300px;" class="center">
+    <h2>Poftă bună!</h2>
+
+
+    <form action="#" method="post">
+        <h3>Lasă un comentariu!</h3>
+        <label for="name">Nume:</label>
+        <input type="text" id="name" name="name" required>
+        
+        <label for="comment">Comentariu:</label>
+        <textarea id="comment" name="comment" rows="4" required></textarea>
+        
+        <button type="submit">Trimite</button>
+    </form>
+
+    <button class ="back-button" onclick="goBack()">Înapoi</button>
+
+    
+</body>
+

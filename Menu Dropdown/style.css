@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background: #515151;
+    font-family: "Orbitron", sans-serif;
+    color: #333;
+  }
+  
+  .menu {
+    width: 95%;
+    margin: 20px auto;
+    background: #333;
+    border-radius: 5px;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  ol {
+    list-style: none;
+    padding: 0.5em 0;
+  }
+  
+  .menu-item {
+    display: inline-block;
+    background: #444;
+    padding: 1em 0.5em;
+    position: relative;
+    border-bottom: 5px solid #999;
+    margin: 0 0.1em;
+    transition: border-bottom 0.23s ease-in-out, background 0.23s linear;
+    cursor: pointer;
+    min-width: 8em;
+    text-align: center;
+    border-radius: 5px;
+  }
+  
+  .menu-item[aria-haspopup=true] {
+    border-bottom-color: #fc9b1b;
+  }
+  
+  .menu-item:hover, .menu-item:focus-within {
+    border-bottom-color: #91d36b;
+    background: #333;
+  }
+  
+  .menu-item:hover .sub-menu, .menu-item:focus-within .sub-menu {
+    visibility: visible;
+    opacity: 1;
+    display: block;
+  }
+  
+  .sub-menu {
+    position: absolute;
+    left: 0;
+    margin-top: 1em;
+    visibility: hidden;
+    display: none;
+    opacity: 0;
+    border-radius: 0 0 5px 5px;
+    width: 100%;
+    z-index: 1;
+  }
+  
+  .sub-menu .menu-item {
+    display: block;
+    margin: 0.1em 0;
+    padding: 1em;
+    width: 100%;
+    text-align: left;
+    background: #333;
+  }
+  
+  .sub-menu .menu-item:hover {
+    background-color: #444;
+  }
+  
+  .sub-menu .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+  }
+  
+  .menu-item a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: inline-block;
+    vertical-align: middle;
+    padding-left: 10px;
+  }
+  
+  .menu-item a:hover {
+    font-weight: bold;
+    color: #ffcc00;
+    text-decoration: underline;
+  }
+  
+  .menu-item a:focus {
+    outline: none;
+  }
+  
+  a i {
+    font-size: 1.2em;
+    vertical-align: middle;
+  }
+  
+  @media (max-width: 690px) {
+    .menu {
+      width: 95%;
+      font-size: 16px;
+    }
+  
+    .menu-item {
+      margin: 0.1em;
+    }
+  
+    .menu-item:nth-child(1) {
+      order: 0;
+    }
+    .menu-item:nth-child(2) {
+      order: 1;
+    }
+    .menu-item:nth-child(3) {
+      order: 3;
+    }
+    .menu-item:nth-child(4) {
+      order: 4;
+    }
+    .menu-item:nth-child(5) {
+      order: 2;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .menu {
+      font-size: 12px;
+    }
+  }
+  

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <header>
+      <div class="navbar">
+        <div class="logo"><img
+          src="./images/myp.png"
+          alt="website-project1"
+          width="200" /></div>
+        <nav>
+            <ul class="nav-links">
+                <li><a class="active" href="aboutme.html">About me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#project">Project</a></li>
+            </ul>
+        </nav>
+        <a class="cta" href="#contact">Contact</a>
+    </div>
+    </header>
+
+    <main>
+      <section id="cover">
+        <div class="back-img">
+            <img src="./images/back.jpg" alt="Cover Image">
+            <div class="cover-overlay">
+                <h1>Welcome to My Portfolio</h1>
+                <p>Discover my projects, skills, and experience.</p>
+                <a class="cta" href="aboutme.html">Learn More</a>
+            </div>
+        </div>
+    </section>
+    
+
+        <section id="home">
+            
+        </section>
+
+        <section id="skills">
+          <div class="skills-container">
+              <h2>Skills</h2>
+              <p class="skills-description">
+                  I have developed a variety of skills over the years. Here’s a summary of my key abilities and expertise.
+              </p>
+              <div class="skills-content">
+                  <div class="skill">
+                      <div class="skill-icon"><i class="fas fa-project-diagram"></i></div>
+                      <div class="skill-text">
+                          <h3>Project Management</h3>
+                          <p>Expert in organizing, planning, and executing projects effectively.</p>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <div class="skill-icon"><i class="fas fa-code"></i></div>
+                      <div class="skill-text">
+                          <h3>Programming Languages</h3>
+                          <p>C, C#, Python, R</p>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <div class="skill-icon"><i class="fas fa-paint-brush"></i></div>
+                      <div class="skill-text">
+                          <h3>Krita</h3>
+                          <p>Skilled in digital painting and illustration using Krita.</p>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <div class="skill-icon"><i class="fas fa-robot"></i></div>
+                      <div class="skill-text">
+                          <h3>ML Engineer</h3>
+                          <p>Experienced in machine learning algorithms and model development.</p>
+                      </div>
+                  </div>
+                  <div class="skill">
+                      <div class="skill-icon"><i class="fas fa-laptop-code"></i></div>
+                      <div class="skill-text">
+                          <h3>Front-End Developer</h3>
+                          <p>Proficient in CSS, HTML, and JavaScript for creating responsive web designs.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </section>
+      
+      <section id="project">
+        <div class="projects-container">
+            <h2>Projects</h2>
+            <p>
+                Explore some of my recent work and projects that showcase my skills and experience.
+            </p>
+            <div class="projects-gallery">
+                <div class="project-item">
+                    <a href="./reteta.html" target="_blank">
+                        <img src="./images/reteta.png" alt="Reteta Project" />
+                        <h3>Reteta Projects</h3>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="./Po.html" target="_blank">
+                        <img src="./images/vizite.png" alt="Tari Vizitate Project" />
+                        <h3>Tari Vizitate Projects</h3>
+                    </a>
+                </div>
+                <div class="project-item">
+                    <a href="./Portofoliov1.html" target="_blank">
+                        <img src="./images/portfolio.png" alt="Portfolio Project" />
+                        <h3>Portfolio Projects</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+        
+        <section id="contact">
+          <div class="contact-container">
+            <h2>Contact</h2>
+            <p class="contact-description">
+                I’d love to hear from you! Whether you have a question, a project idea, or just want to say hello, feel free to reach out.
+            </p>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <i class="fas fa-user contact-icon"></i>
+                    <span>Vovc Ruxanda, 079055591</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt contact-icon"></i>
+                    <span>Chişinău, Moldova</span>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope contact-icon"></i>
+                    <span><a href="mailto:vovcruxanda63@gmail.com">vovcruxanda63@gmail.com</a></span>
+                </div>
+            </div>
+
+            <form>
+              <h3>Send Me a Message:</h3>
+              <input type="text" name="name" placeholder="Name..." required />
+              <input type="number" name="phone" placeholder="Phone..." required minlength="9" />
+              <input type="text" name="email" placeholder="Email..." required />
+              <label for="reason">Reason for Contacting (select one):</label>
+              <div class="custom-select" style="width:200px;">
+                  <select name="reason" required>
+                      <option value="">-- Select an Option --</option>
+                      <option value="interview">Interview</option>
+                      <option value="job">Job</option>
+                  </select>
+              </div>
+              <input type="submit" value="Send">
+          </form>
+          
+            <br><br>
+            
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 My Portfolio. All rights reserved.</p>
+        <p>Follow me on 
+            <a href="https://www.facebook.com/ruxanda.vovc.9/" target="_blank"><i class="fab fa-facebook-f"></i> Facebook</a>
+        </p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/ruxanda.vovc.9/" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        </div>
+    </footer>
+    <a href="#top" class="top-button" id="top-button">
+      <i class="fas fa-chevron-up"></i>
+  </a>
+
+  <script>
+      // Get the button
+      const topButton = document.getElementById('top-button');
+
+      // Show or hide the button based on scroll position
+      window.addEventListener('scroll', () => {
+          if (window.scrollY > 300) { // Change 300 to the scroll position at which you want the button to appear
+              topButton.classList.add('show');
+          } else {
+              topButton.classList.remove('show');
+          }
+      });
+  </script>
+</body>
+</html>

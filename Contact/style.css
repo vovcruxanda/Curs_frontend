@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600&display=swap');
+
+:root {
+    --primary-bg-color: #F7B1AB;
+    --secondary-bg-color: #807182;
+    --font-color: rgba(0,0,0,.8);
+    --font-family: 'Montserrat', sans-serif;
+    --form-border-color: rgba(0,0,0,.1);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: #D8AA96;
+    color: var(--font-color);
+    display: grid;
+    font-family: var(--font-family);
+    font-size: 14px;
+    font-weight: 400;
+    height: 100vh;
+    justify-items: center;
+    width: 100vw;
+}
+
+
+
+.left-container {
+    background: var(--secondary-bg-color) url('./img/back.jpg') no-repeat center center;
+    background-size: cover;
+    overflow: hidden;
+    padding: 40px 0 0 0;
+    position: relative;
+    text-align: center;
+    padding: 30px;
+    margin-top: 20px;
+}
+
+.left-container h1 {
+    color: var(--primary-bg-col);
+    display: inline-block;
+    font-size: 45px;
+    position: relative; 
+    z-index: 2;
+}
+
+.left-container h1 i {
+    background: var(--primary-bg-color);
+    border-radius: 50%;
+    color: var(--secondary-bg-color);
+    font-size: 24px;
+    margin-right: 5px;
+    padding: 10px;
+    transform: rotate(-45deg);
+    position: relative; /* Add this to ensure icon stays above the background */
+    z-index: 2; /* Add this to ensure icon stays above the background */
+}
+
+.left-container img {
+    filter: sepia(100%);
+    width: 70%;
+}
+
+.right-container {
+    background: #f5b6b1;
+    display: grid;
+    grid-template-areas: "." ".";
+    padding: 20px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+.right-container h1:nth-of-type(1) {
+    color: var(--font-color);
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.right-container .set {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.right-container input, .right-container select, .right-container textarea {
+    border: 1px solid var(--form-border-color);
+    border-radius: 4px;
+    height: 38px;
+    line-height: 38px;
+    padding-left: 10px;
+    width: calc(50% - 10px);
+}
+
+.right-container input, .right-container label, .right-container select, .right-container textarea {
+    color: var(--font-color);
+}
+
+.right-container header {
+    padding: 20px 0;
+}
+
+.right-container label, .right-container input, .right-container .input-group {
+    width: 100%;
+}
+
+
+.right-container .input-group {
+    width: calc(50% - 10px);
+    padding: 3px;
+}
+
+.right-container textarea {
+    height: 100px;
+    width: 200%;
+}
+
+.right-container footer {
+    align-items: center;
+    background: #fff;
+    display: grid;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.right-container footer button {
+    border: 1px solid rgba(0,0,0,.2);
+    height: 38px;
+    line-height: 38px;
+    width: 100px;
+    border-radius: 19px;
+    font-family: var(--font-family);
+    background: var(--secondary-bg-color);
+    color: #fff;
+    transition: .2s all ease-in-out;
+}
+
+.right-container footer button:hover {
+    background: #171A2B;
+}
+
+@media (max-width: 768px) {
+    .contact-container {
+        grid-template-columns: 1fr;
+    }
+
+    .left-container, .right-container {
+        width: 100%;
+    }
+
+    .right-container .set {
+        flex-direction: column;
+    }
+
+    .right-container input, .right-container select, .right-container textarea, .right-container .input-group {
+        width: 100%;
+    }
+}

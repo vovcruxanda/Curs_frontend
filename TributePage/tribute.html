@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marie Curie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navMenu">
+            <a href="#hero">Marie Curie<span class="dot"></span></a>
+            <a href="#biography">Biography <span class="dot"></span></a>
+            <a href="#achievements">Achievements <span class="dot"></span></a>
+            <a href="#fun-facts">Fun Facts <span class="dot"></span></a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero">
+            <div class="back-img">
+            <img src="./img/mc.webp" alt="Cover Image">
+                <div class="hero-overlay">
+                    <h1>Marie Curie</h1>
+                    <p>The Pioneer of Radioactivity</p>
+                    <a class="cta" href="#biography">Learn More</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="biography" class="biography">
+            <h2>Biography</h2>
+            <div class="bio-content">
+            <img src="./img/mc1.webp" alt="Personality Image" class="bio-image">
+            <p>Marie Curie was born on November 7, 1867, in Warsaw, Poland. <br><br> She was a physicist and chemist who conducted pioneering research on radioactivity. She was <b> the first woman to win a Nobel Prize</b> and the only person to win Nobel Prizes in two different scientific fields (Physics and Chemistry).</p>
+            </div>
+        </section>
+
+        <blockquote>
+            Nothing in life is to be feared, it is only to be understood. Now is the time to understand more, so that we may fear less.
+            <span>Marie Courie</span>
+          </blockquote>
+
+        <section id="achievements" class="achievements">
+            <h2>Achievements</h2>
+            <ul>
+                <li>Discovery of Polonium and Radium</li>
+                <li>First woman to win a Nobel Prize</li>
+                <li>Only person to win Nobel Prizes in two different scientific fields</li>
+                <li>Founder of the Curie Institutes in Paris and Warsaw</li>
+            </ul>
+        </section>
+        <section id="fun-facts" class="fun-facts">
+            <h2>Fun Facts</h2>
+            <ul>
+                <li>Marie Curie's notebooks are still radioactive and will be for another 1500 years.</li>
+                <li>She used to carry test tubes of radium in her pockets.</li>
+                <li>Marie Curie was the first woman to become a professor at the University of Paris.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Vovc Ruxanda. All rights reserved.</p>
+        <button class="scroll-to-top" onclick="scrollToTop()">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2l-10 10h6v10h8v-10h6z"/>
+            </svg>
+        </button>
+    </footer>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+        // Add scroll event listener to toggle header class
+        document.addEventListener('scroll', () => {
+            const header = document.querySelector('header');
+            if (window.scrollY > 50) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+        });
+    </script>
+</body>
+</html>

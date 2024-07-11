@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <div class="contact-container">
+        <div class="left-container">
+            <h1><i class="fas fa-envelope"></i>Contact Us</h1>
+        </div>
+        <div class="right-container">
+            <header>
+                <h1>We'd love to hear from you!</h1>
+                <br>
+                <p>Contact us to talk about your concerns anytime!</p>
+            </header>
+            <form>
+                <div class="set">
+                    <div class="input-group">
+                        <label for="first-name">First Name</label>
+                        <input id="first-name" type="text" placeholder="Your name">
+                    </div>
+                    <div class="input-group">
+                        <label for="last-name">Last Name</label>
+                        <input id="last-name" type="text" placeholder="Your last name">
+                    </div>
+                </div>
+                <div class="set">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input id="email" type="email" placeholder="Your email">
+                    </div>
+                    <div class="input-group">
+                        <label for="phone-number">Phone Number</label>
+                        <input id="phone-number" type="tel" placeholder="Your phone number">
+                    </div>
+                </div>
+                <div class="set">
+                    <div class="input-group">
+                        <label for="country">Country</label>
+                        <select id="country">
+                            <option value="" disabled selected>-- Select your country --</option>
+                            <option value="US"><span class="fi fi-us"></span>United States</option>
+                            <option value="CA">Canada</option>
+                            <option value="GB">United Kingdom</option>
+                            <option value="AU">Australia</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="address">Address</label>
+                        <input id="address" type="text" placeholder="Your address">
+                    </div>
+                </div>
+                <div class="set">
+                    <div class="input-group">
+                        <label for="subject">Subject</label>
+                        <input id="subject" type="text" placeholder="Subject">
+                    </div>
+                </div>
+                <div class="set">
+                    <div class="input-group">
+                        <label for="message">Message</label>
+                        <br>
+                        <textarea id="message" placeholder="Write something..."></textarea>
+                    </div>
+                </div>
+                <footer>
+                    <button type="submit" id="submit">Submit</button>
+                </footer>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
