@@ -1,0 +1,191 @@
+* {
+    font-family: Helvetica, sans-serif;
+    color: seashell;
+    background-color: black;
+    opacity: 0.9;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 69px;
+    width: 100%;
+    padding: 0 20px; 
+    box-sizing: border-box;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav img{
+    height:40px;
+}
+
+nav .nav-list {
+    display: flex;
+    justify-content: right;
+    flex: 1;
+}
+
+nav .nav-list ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-list ul li {
+    margin: 0 15px;
+}
+
+nav .nav-list ul li a {
+    position: relative;
+    display: block;
+    padding: 4px 0;
+    color: seashell;
+    text-decoration: none;
+    transition: color 0.5s;
+    font-size: larger;
+}
+
+nav .nav-list ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #f8d985; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+  
+nav .nav-list ul li a:hover::after,
+nav .nav-list ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+a {
+    text-decoration: underline;
+}
+
+
+section {
+    width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 50px;
+}
+
+/*Sectiunea nr1*/
+
+#mission {
+    height: 700px;
+    background-image: url(./img/img-mission-background.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+#mission .text-container {
+    width: 1200px;
+    padding: 20px;
+    text-align: center;
+    color: white; /* Text alb pentru contrast */
+}
+
+#mission * {
+    opacity: 0.9;
+    padding: 10px;
+}
+
+
+/* Sectiunea nr2*/
+
+#featuredtea {
+    
+    text-align: center;
+}
+
+#featuredtea img {
+    width: 300px;
+    height: 200px;
+}
+
+#featuredtea * {
+    margin: 5px;
+}
+
+#featuredtea {
+    display: flex;
+    flex-wrap: wrap;
+    width: 1000px;
+    justify-content: center;
+}
+
+#featuredtea div {
+    transition: transform 0.3s ease; 
+}
+
+#featuredtea div:hover {
+    transform: scale(1.1);
+}
+
+/*Sectiunea nr3*/
+
+#locations {
+    height: 600px;
+    background-image: url(./img/img-locations-background.jpg);
+    margin: 0;
+}
+
+#locations h2 {
+    background-color: transparent;
+}
+
+#locations > div {
+    display: flex;
+    opacity: 1;
+    margin: 15px;
+    background-color: transparent;
+}
+
+#locations div div {
+    margin: 20px;
+    width: 300px;
+    text-align: center;
+    opacity: 1;
+    padding: 10px 0px 10px 0px;
+}
+
+#locations div div * {
+    padding: 10px;
+}
+
+/* Sectiunea contacts*/
+
+#contacts {
+    height: 200px;
+    justify-content: space-around;
+}
+
+/* Sectiunea footer*/
+
+footer {
+    margin: 20px;
+}

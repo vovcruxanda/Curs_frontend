@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Descoperă figurile de șah</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="board-container">
+            <h1>Descoperă figurile de șah</h1><br>
+            <div class="chess-board">
+                <!-- First row: Black pieces -->
+                <div class="cell black"><span class="piece black-tooltip">♜<span class="tooltip">Tură</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♞<span class="tooltip">Cal</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♝<span class="tooltip">Nebun</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♛<span class="tooltip">Regină</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♚<span class="tooltip">Rege</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♝<span class="tooltip">Nebun</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♞<span class="tooltip">Cal</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♜<span class="tooltip">Tură</span></span></div>
+                
+                <!-- Second row: Black pawns -->
+                <div class="cell white"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece black-tooltip">♟<span class="tooltip">Pion</span></span></div>
+                
+                <!-- Empty rows -->
+                <div class="cell black"></div><div class="cell white"></div><div class="cell black"></div><div class="cell white"></div>
+                <div class="cell black"></div><div class="cell white"></div><div class="cell black"></div><div class="cell white"></div>
+                <div class="cell white"></div><div class="cell black"></div><div class="cell white"></div><div class="cell black"></div>
+                <div class="cell white"></div><div class="cell black"></div><div class="cell white"></div><div class="cell black"></div>
+                <div class="cell black"></div><div class="cell white"></div><div class="cell black"></div><div class="cell white"></div>
+                <div class="cell black"></div><div class="cell white"></div><div class="cell black"></div><div class="cell white"></div>
+                <div class="cell white"></div><div class="cell black"></div><div class="cell white"></div><div class="cell black"></div>
+                <div class="cell white"></div><div class="cell black"></div><div class="cell white"></div><div class="cell black"></div>
+                
+                <!-- Seventh row: White pawns -->
+                <div class="cell black"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♙<span class="tooltip">Pion</span></span></div>
+                
+                <!-- Eighth row: White pieces -->
+                <div class="cell white"><span class="piece white-tooltip">♖<span class="tooltip">Tură</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♘<span class="tooltip">Cal</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♗<span class="tooltip">Nebun</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♕<span class="tooltip">Regină</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♔<span class="tooltip">Rege</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♗<span class="tooltip">Nebun</span></span></div>
+                <div class="cell white"><span class="piece white-tooltip">♘<span class="tooltip">Cal</span></span></div>
+                <div class="cell black"><span class="piece white-tooltip">♖<span class="tooltip">Tură</span></span></div>
+            </div>
+            <!-- Row labels (1-8) -->
+            <div class="row-label left" style="top: 100px;">8</div>
+            <div class="row-label left" style="top: 150px;">7</div>
+            <div class="row-label left" style="top: 200px;">6</div>
+            <div class="row-label left" style="top: 250px;">5</div>
+            <div class="row-label left" style="top: 300px;">4</div>
+            <div class="row-label left" style="top: 350px;">3</div>
+            <div class="row-label left" style="top: 400px;">2</div>
+            <div class="row-label left" style="top: 450px;">1</div>
+            <!-- Column labels (A-H) -->
+            <div class="col-label top" style="left: 0;">A</div>
+            <div class="col-label top" style="left: 50px;">B</div>
+            <div class="col-label top" style="left: 100px;">C</div>
+            <div class="col-label top" style="left: 150px;">D</div>
+            <div class="col-label top" style="left: 200px;">E</div>
+            <div class="col-label top" style="left: 250px;">F</div>
+            <div class="col-label top" style="left: 300px;">G</div>
+            <div class="col-label top" style="left: 350px;">H</div>
+            <!-- Right side row labels -->
+            <div class="row-label right" style="top: 100px;">8</div>
+            <div class="row-label right" style="top: 150px;">7</div>
+            <div class="row-label right" style="top: 200px;">6</div>
+            <div class="row-label right" style="top: 250px;">5</div>
+            <div class="row-label right" style="top: 300px;">4</div>
+            <div class="row-label right" style="top: 350px;">3</div>
+            <div class="row-label right" style="top: 400px;">2</div>
+            <div class="row-label right" style="top: 450px;">1</div>
+            <!-- Bottom column labels -->
+            <div class="col-label bottom" style="left: 0;">A</div>
+            <div class="col-label bottom" style="left: 50px;">B</div>
+            <div class="col-label bottom" style="left: 100px;">C</div>
+            <div class="col-label bottom" style="left: 150px;">D</div>
+            <div class="col-label bottom" style="left: 200px;">E</div>
+            <div class="col-label bottom" style="left: 250px;">F</div>
+            <div class="col-label bottom" style="left: 300px;">G</div>
+            <div class="col-label bottom" style="left: 350px;">H</div>
+        </div>
+    </div>
+    <script>
+        const pieces = document.querySelectorAll('.piece');
+        pieces.forEach(piece => {
+            piece.addEventListener('mouseover', () => {
+                piece.style.color = '#d4a373';
+            });
+            piece.addEventListener('mouseout', () => {
+                piece.style.color = '';
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,209 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #FAF9F6;
+}
+
+header {
+    background: linear-gradient(90deg, #fff8e7 50%, #cad996 50%);
+    padding: 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 20px; /* Add horizontal padding to ensure content does not touch edges */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav img{
+    height:40px;
+}
+
+nav .nav-list {
+    display: flex;
+    justify-content: center;
+    flex: 1;
+}
+
+nav .nav-list ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav .nav-list ul li {
+    margin: 0 15px;
+}
+
+nav .nav-list ul li a {
+    position: relative;
+  display: block;
+  padding: 4px 0;
+  font-family: Arial, sans-serif;
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: color 0.5s;
+}
+
+nav .nav-list ul li a::after {
+    position: absolute;
+    content: "";
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #baca81; 
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+  
+nav .nav-list ul li a:hover::after,
+nav .nav-list ul li a.active::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+  
+  /* Optional: Hover color effect */
+nav .nav-list ul li a:hover {
+    color: #a3a695; /* Change text color on hover */
+}
+
+.search__container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.search__input {
+    width: 75%;
+    padding: 12px 24px;
+    background-color: transparent;
+    transition: transform 250ms ease-in-out;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24'%3E%3Cpath d='M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z'/%3E%3Cpath d='M0 0h24v24H0z' fill='none'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+    background-position: 95% center;
+    border-radius: 50px;
+    border: 1px solid #575756;
+    transition: all 250ms ease-in-out;
+    backface-visibility: hidden;
+    transform-style: preserve-3d;
+}
+
+.search__input::placeholder {
+    color: rgba(87, 87, 86, 0.8);
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.search__input:hover,
+.search__input:focus {
+    padding: 12px 0;
+    outline: 0;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #575756;
+    border-radius: 0;
+    background-position: 100% center;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+}
+
+.hero-content {
+    max-width: 50%;
+}
+
+.hero-content h1 {
+    font-size: 36px;
+    margin: 0 0 20px;
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin: 0 0 20px;
+}
+
+.hero-content button {
+    padding: 12px 24px;
+    background-color: transparent;
+    font-size: 14px;
+    line-height: 18px;
+    color: #575756;
+    border-radius: 50px;
+    border: 1px solid #575756;
+}
+
+.hero-content button:hover,
+.hero-content button:focus {
+    background-color: #b8d07b;  /* Slightly darker green for hover/focus effect */
+    border: 1px solid #b8d07b;  /* Match the border color to the hover/focus background color */
+    color: #ffffff;  /* Maintain white text color */
+    outline: none;  /* Remove default focus outline */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);  /* Add a subtle shadow for emphasis */
+}
+
+.hero-image {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    flex: 1;
+}
+
+.hero-image img {
+    max-width: 70%;
+    height: auto;
+    border-radius: 10px;
+}
+
+
+.products {
+    padding: 40px;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+footer {
+    padding: 20px;
+    background-color: #333;
+    color: white;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav .nav-list {
+        flex-direction: column; /* Stack the navigation links vertically */
+        align-items: center; /* Center align the links */
+    }
+
+    nav .nav-list ul {
+        flex-direction: column; /* Arrange the links in a column */
+    }
+
+    nav .nav-list ul li {
+        margin: 10px 0; /* Add margin between the items */
+    }
+}

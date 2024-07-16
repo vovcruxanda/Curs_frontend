@@ -1,0 +1,106 @@
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #e0e7a0;
+        }
+        .container {
+            display: flex;
+            align-items: flex-start;
+            gap: 50px;
+        }
+        .board-container {
+            position: relative;
+        }
+        .chess-board {
+            display: grid;
+            grid-template-columns: repeat(8, 50px);
+            grid-template-rows: repeat(8, 50px);
+            gap: 0;
+            border: 2px solid #000;
+        }
+        .chess-board div {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 32px;
+            font-weight: bold;
+        }
+        .chess-board .black {
+            background-color: #769656;
+        }
+        .chess-board .white {
+            background-color: #eeeed2;
+        }
+        .chess-board .cell:hover {
+            background-color: #fff;
+        }
+        .tooltip {
+            position: absolute;
+            color: #fff;
+            padding: 12px;
+            border: 1px solid #fff;
+            display: none;
+            border-radius: 15px;
+            font-size: 18px;
+        }
+        
+        /* Tooltip pentru piesele albe */
+        .piece.white-tooltip .tooltip {
+            background-color: #fff;
+            color: #000;
+            border-color: #000;
+        }
+        
+        /* Tooltip pentru piesele negre */
+        .piece.black-tooltip .tooltip {
+            background-color: #000;
+            color: #fff;
+            border-color: #fff;
+        }
+        
+        .chess-board .piece:hover .tooltip {
+            display: block;
+        }
+        
+        .chess-board .piece:hover .tooltip {
+            display: block;
+        }
+        .piece:hover {
+            color: #d4a373;
+        }
+        .row-label, .col-label {
+            position: absolute;
+            font-size: 14px;
+            font-weight: bold;
+        }
+        .row-label {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .col-label {
+            width: 50px;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .row-label.left {
+            left: -40px;
+        }
+        .row-label.right {
+            left: 392px;
+        }
+        .col-label.top {
+            top: 60px;
+        }
+        .col-label.bottom {
+            top: 490px;
+        }
