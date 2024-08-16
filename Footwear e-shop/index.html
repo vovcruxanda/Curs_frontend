@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footwear Shop</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="logo">
+            ShoeShop
+            </div>
+            <div class="menu">
+                <a href="#" class="link">
+                    <div class="title">Home</div>
+                    <div class="bar"></div>
+                </a>
+                <a href="#" class="link">
+                    <div class="title">Products</div>
+                    <div class="bar"></div>
+                </a>
+                <a href="#" class="link">
+                    <div class="title">About</div>
+                    <div class="bar"></div>
+                </a>
+                <a href="#" class="link">
+                    <div class="title">Contacts</div>
+                    <div class="bar"></div>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>BE BOLD | BE CANDID</h1>
+                <p>WHEAR YOUR CHOICE & BE YOURSELF</p><br>
+                <button id="btn">Buy Now</button>
+            </div>
+            <div class="hero-image">
+                <img src="./img/image1.jpg" alt="Descriptive Alt Text">
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="product">
+        <div class="container">
+            <h2>Our Products</h2>
+            <div class="products">
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/shoe.webp" alt="Product Image">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-badge">New</div>
+                    <div class="product-details">
+                        <h3>Butterfly Straps</h3>
+                        <p>Short product description goes here. This is a brief overview of the product features.</p>
+                        <p class="product-rating">Star-rating: <span>★★★★★</span> 4.8</p>
+                        <div class="product-price">
+                            Price: <span>$99.99</span>
+                        </div>
+                        <div class="product-options">
+                            <div class="option">
+                                <label for="product-color"><h4>Culoare:</h4></label>
+                                <select name="product-color" id="product-color" aria-label="Alegeți culoarea produsului">
+                                    <option value="bej">Bej</option>
+                                    <option value="roz">Roz</option>
+                                    <option value="alb">Alb</option>
+                                    <option value="negru">Negru</option>
+                                    <option value="albastru">Albastru</option>
+                                    <option value="verde">Verde</option>
+                                    <option value="galben">Galben</option>
+                                    <option value="portocaliu">Portocaliu</option>
+                                    <option value="mov">Mov</option>
+                                    <option value="maro">Maro</option>
+                                    <option value="gri">Gri</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="product-size"><h4>Marime:</h4></label>
+                                <div class="product-size-buttons">
+                                    <button>-</button>
+                                    <input type="number" id="product-size" name="product-size" min="35" max="48" value="1" aria-label="Alegeți mărimea produsului">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/shoe1.webp" alt="Product Image">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-badge">Hot <i class="fas fa-fire"></i></div>
+                    <div class="product-details">
+                        <h3>DiGucci Straps</h3>
+                        <p>Short product description goes here. This is a brief overview of the product features.</p>
+                        <p class="product-rating">Star-rating: <span>★★★★★</span> 4.5</p>
+                        <div class="product-price">
+                            Price: <span>$99.99</span>
+                        </div>
+                        <div class="product-options">
+                            <div class="option">
+                                <label for="product-color"><h4>Culoare:</h4></label>
+                                <select name="product-color" id="product-color" aria-label="Alegeți culoarea produsului">
+                                    <option value="bej">Bej</option>
+                                    <option value="roz">Roz</option>
+                                    <option value="alb">Alb</option>
+                                    <option value="negru">Negru</option>
+                                    <option value="albastru">Albastru</option>
+                                    <option value="verde">Verde</option>
+                                    <option value="galben">Galben</option>
+                                    <option value="portocaliu">Portocaliu</option>
+                                    <option value="mov">Mov</option>
+                                    <option value="maro">Maro</option>
+                                    <option value="gri">Gri</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="product-size"><h4>Marime:</h4></label>
+                                <div class="product-size-buttons">
+                                    <button>-</button>
+                                    <input type="number" id="product-size" name="product-size" min="35" max="48" value="1" aria-label="Alegeți mărimea produsului">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/shoe.png" alt="Product Image">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-badge">New</div>
+                    <div class="product-details">
+                        <h3>Versace Richy Heels</h3>
+                        <p>Short product description goes here. This is a brief overview of the product features.</p>
+                        <p class="product-rating">Star-rating: <span>★★★★★</span> 4.6</p>
+                        <div class="product-price">
+                            Price: <span>$99.99</span>
+                        </div>
+                        <div class="product-options">
+                            <div class="option">
+                                <label for="product-color"><h4>Culoare:</h4></label>
+                                <select name="product-color" id="product-color" aria-label="Alegeți culoarea produsului">
+                                    <option value="negru">Auriu</option>
+                                    <option value="bej">Bej</option>
+                                    <option value="roz">Argintiu</option>
+                                    <option value="alb">Alb</option>
+                                    <option value="negru">Negru</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="product-size"><h4>Marime:</h4></label>
+                                <div class="product-size-buttons">
+                                    <button>-</button>
+                                    <input type="number" id="product-size" name="product-size" min="35" max="48" value="1" aria-label="Alegeți mărimea produsului">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+                <div class="product-card">
+                    <div class="product-image">
+                        <img src="./img/shoe5.jpg" alt="Product Image">
+                        <div class="product-overlay">
+                            <button class="quick-view">Quick View</button>
+                        </div>
+                    </div>
+                    <div class="product-badge">Top 3</div>
+                    <div class="product-details">
+                        <h3>Versace Rococo Heels</h3>
+                        <p>Short product description goes here. This is a brief overview of the product features.</p>
+                        <p class="product-rating">Star-rating: <span>★★★★★</span> 4.9</p>
+                        <div class="product-price">
+                            Price: <span>$99.99</span>
+                        </div>
+                        <div class="product-options">
+                            <div class="option">
+                                <label for="product-color"><h4>Culoare:</h4></label>
+                                <select name="product-color" id="product-color" aria-label="Alegeți culoarea produsului">
+                                    <option value="negru">Negru</option>
+                                    <option value="bej">Bej</option>
+                                    <option value="alb">Alb</option>
+                                </select>
+                            </div>
+                            <div class="option">
+                                <label for="product-size"><h4>Marime:</h4></label>
+                                <div class="product-size-buttons">
+                                    <button>-</button>
+                                    <input type="number" id="product-size" name="product-size" min="35" max="48" value="1" aria-label="Alegeți mărimea produsului">
+                                    <button>+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="add-to-cart">Add to Cart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</body>
+
+<footer class="footer">
+    <div class="container">
+        <div class="footer-content">
+            <div class="footer-section about">
+                <h3>About Us</h3>
+                <p>We offer the best products in the market with quality guaranteed.</p>
+            </div>
+            <div class="footer-section links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </div>
+            <div class="footer-section social">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li><a href="#"><i class="fab fa-facebook-f"></i> Facebook</a></li>
+                    <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                    <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Your Company. All rights reserved.</p>
+        </div>
+    </div>
+</footer>
+
+
+</html>
