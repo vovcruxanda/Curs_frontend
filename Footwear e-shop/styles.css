@@ -226,6 +226,7 @@ button {
 
 .product-price {
     padding-top: 20px;
+    padding-bottom: 20px;
     font-size: large;
     font-weight: 700;
     align-self: flex-end;
