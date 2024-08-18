@@ -1,0 +1,58 @@
+body{
+  background-color: #f4eee6;
+  text-align: center;
+}
+
+.calendar-container {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+}
+
+.month {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  width: 300px;
+  text-align: center;
+  margin: 5px;
+}
+
+.month-title {
+  background-color: #000;
+  color: white;
+  padding: 10px 0;
+  font-size: 24px;
+}
+
+.days {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: 50px;
+}
+
+.day {
+  font-weight: bold;
+  padding: 10px 0;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.date-next-month{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #ccc;
+}
+
+.highlighted {
+  border: 2px solid red; /* Evidențierea zilei selectate */
+}
+
+/* Stiluri pentru celelalte luni (August și Septembrie) */

@@ -1,0 +1,40 @@
+body {
+    font-size: 35px;
+    background-color: wheat;
+    text-align: center;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+}
+
+.item{
+  background-color: white;
+  border: 2px solid red;
+  border-radius: 5px;
+  padding: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+
+.item-1 {
+  grid-row: 10/ span 3;
+  grid-column: 10/ span 3;
+}
+.item-2 {
+  grid-row: 7/ span 3;
+  grid-column: 7/ span 3;
+}
+.item-3 {
+  grid-row: 4/ span 3;
+  grid-column: 4/ span 3;
+}
+.item-4 {
+  grid-row: 1/ span 3;
+  grid-column: 1/ span 3;
+}
