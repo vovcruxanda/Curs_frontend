@@ -1,4 +1,4 @@
-# Tea Site Project
+# Portfolio Site Project
 
 This project is like a short CV. The design is really for girl girls and have pink accents.
 
