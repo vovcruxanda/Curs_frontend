@@ -14,10 +14,14 @@ All next paragraphs are styled in cards to have a more modern design.
 
 ![Biografy Page](./img/biog.png)
 
-## Acvievements
+## Achievements
 
 ![Achievements Page](./img/achiev.png)
 
 ## Fun Facts
 
 ![Fun Facts Page](./img/funf.png)
+
+Also at the bottom of the page we see the footer and the yellow button that take us to the top of the page.
+
+Thank you for reading! :)
