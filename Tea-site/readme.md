@@ -1,12 +1,12 @@
 # Tea Site Project
 
-In this project we had to match the presentated template by our teacher and verify our accumulated skills. Firstly i didn't understand this and started my own project so... here wil be presentated both of them.
+In this project we had to match the presentated template by our teacher and verify our accumulated skills. Firstly, i didn't understand this and started my own project so... here wil be presented both of them.
 
 ## Project Teacher Template
 
 ## Home Page
 
-The site have a very simple menu that is undelined as it is visible in the image below. Also there is a simple logo and a cover image with the mission of this tea factory.
+The site have a very simple menu that is underlined as it is visible in the image below. Also there is a simple logo and a cover image with the mission of this tea factory.
 
 ![Homepage Preview](./img/home.png)
 
