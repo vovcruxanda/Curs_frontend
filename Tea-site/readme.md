@@ -34,7 +34,7 @@ So let's go to the next site that I started!
 
 ## Project My Vision
 
-Here is my project that I started by mistake, but Ireally love how it looks. My only trouble here is that the tea leaves is not centered and I can't make them to be so. I tryed but with shame I can say that I failed. If you see were is my mistake, I am open to any suggestions, remarks and any comment on y work :)
+Here is my project that I started by mistake, but I really love how it looks. My only trouble here is that the tea leaves is not centered and I can't make them to be so. I tryed but with shame I can say that I failed. If you see were is my mistake, I am open to any suggestions, remarks and any comment on my work :)
 
 ![Home Page](./img/home1.png)
 
