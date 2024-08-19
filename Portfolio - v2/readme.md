@@ -1,10 +1,10 @@
-# Tea Site Project
+# Portfolio Site Project
 
 This project is like a short CV. The design is really for girl girls and have pink accents.
 
 ## Home Page
 
-Menu is simple and just the selected menu ar is changing text color on pink. The logo is AI generated. The cover image has the same color palette as the site and have a proffesional content. Also the cover style is inspired from the tribute page and also have this active button that sends you to the About me page.
+Menu is simple and just the selected menu bar is changing text color on pink. The logo is AI generated. The cover image has the same color palette as the site and have a proffesional content. Also the cover style is inspired from the tribute page and also have this active button that sends you to the About me page.
 
 ![Homepage Preview](./images/index.png)
 
