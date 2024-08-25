@@ -6,7 +6,7 @@ This project is a challenge to create a website with product cards that have a m
 
 ![Homepage Preview](./img/site.png)
 
-Menu is simple and in a minimalistic style. The active element is just undelined to show that your cursor is on it.
+Menu is simple and in a minimalistic style. The active element is just underlined to show that your cursor is on it.
 
 ![Menu](./img/menu.png)
 
