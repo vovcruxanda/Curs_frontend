@@ -1,0 +1,146 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url('./img/money.webp'); 
+    background-size: cover;
+    background-position: center; 
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tip-wrapper {
+    display: flex;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.3); /* Semi-transparent background */
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(10px); /* Creates the glass effect */
+    border: 1px solid rgba(255, 255, 255, 0.2); /* Optional: white border for better contrast */
+    padding: 20px; /* Optional: add padding for content spacing */
+}
+
+.input-section, .output-section {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    margin: 10px;
+    width: calc(50% - 20px);
+    transition: transform 0.3s;
+}
+
+.input-section:hover, .output-section:hover {
+    transform: scale(1.02);
+}
+
+h2 {
+    color: #249420;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input[type="number"], select {
+    width: 90%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 2px solid #249420;
+    border-radius: 5px;
+}
+
+.tip-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.tip-label {
+    padding: 10px 15px;
+    border: 2px solid #249420;
+    border-radius: 20px;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: background-color 0.3s, color 0.3s;
+    font-weight: bold;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+input[type="radio"]:checked + .tip-label {
+    background-color: #249420;
+    color: white;
+}
+
+.calculated-tip {
+    margin-top: 10px;
+    background-color: #d5ecb7;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.action-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #249420;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 1.1em;
+    transition: background-color 0.3s;
+}
+
+.action-btn:hover {
+    background-color: #054d16;
+}
+
+.result-row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.text-right {
+    text-align: right;
+    color: #249420;
+}
+
+.output-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+@media (max-width: 600px) {
+    .tip-wrapper {
+        flex-direction: column;
+        align-items: stretch;
+    }
+    .input-section, .output-section {
+        width: 100%;
+        margin: 0 0 20px 0;
+    }
+}
+
+.canvas-container {
+    width: 100%; /* Make the container take the full width */
+    height: 250px; /* Set a fixed height for the canvas */
+}
+
+#tipChart {
+    width: 100% !important; /* Ensure the canvas fills the container */
+    height: 100% !important; /* Ensure the canvas fills the height */
+}

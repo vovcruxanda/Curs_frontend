@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coffee Tip Calculator ☕</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  </head>
+  <body>
+    <div class="tip-wrapper">
+      <div class="input-section">
+        <h2>💰 Tip Calculator</h2>
+
+        <label for="bill-amount">Bill Amount</label>
+        <input
+          type="number"
+          id="bill-amount"
+          placeholder="Enter amount"
+          required
+        />
+
+        <label>Select Tip Percentage</label>
+        <div id="tip-percentage" class="tip-options">
+          <input type="radio" id="tip-excellent" name="tip-option" value="0.30" />
+          <label for="tip-excellent" class="tip-label">30% 🌟</label>
+
+          <input type="radio" id="tip-good" name="tip-option" value="0.20" />
+          <label for="tip-good" class="tip-label">20% 👍</label>
+
+          <input type="radio" id="tip-average" name="tip-option" value="0.15" />
+          <label for="tip-average" class="tip-label">15% 😊</label>
+
+          <input type="radio" id="tip-poor" name="tip-option" value="0.10" />
+          <label for="tip-poor" class="tip-label">10% 🙁</label>
+
+          <input type="radio" id="tip-none" name="tip-option" value="0" />
+          <label for="tip-none" class="tip-label">0% 😢</label>
+        </div>
+
+        <div class="calculated-tip">
+          <p>Tip Amount: <span id="tip-total">0</span> MDL</p>
+        </div>
+
+        <label for="split-count">Number of People</label>
+        <select id="split-count" required>
+          <option value="0">0</option>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+          <option value="7">7</option>
+          <option value="8">8</option>
+          <option value="9">9</option>
+          <option value="10">10</option>
+        </select>
+        <button type="button" id="compute-btn" class="action-btn">Calculate</button>
+      </div>
+      <div class="output-section">
+        <h2>Results 📊</h2>
+        <div class="result-row">
+          <p>Tip Amount / Person:</p>
+          <p id="tip-person" class="text-right">0 MDL</p>
+        </div>
+        <div class="result-row">
+          <p>Total Amount / Person:</p>
+          <p id="total-person" class="text-right">0 MDL</p>
+        </div>
+        <button type="button" id="reset-btn" class="action-btn">Reset</button>
+        <div class="canvas-container">
+            <canvas id="tipChart"></canvas>
+        </div>        
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
