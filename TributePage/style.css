@@ -61,7 +61,7 @@ header {
     background: #fddb3a;
     border-radius: 50%;
     position: absolute;
-    bottom: -10px; /* Ajustează această valoare pentru a potrivi punctul sub link */
+    bottom: -10px;
     left: 50%;
     transform: translateX(-50%);
     opacity: 0;
@@ -72,208 +72,49 @@ header {
     opacity: 1;
 }
 
-/* Stilul pentru main */
-main {
-    margin-top: 80px;
-    padding: 20px;
-}
-
-/* Stilul pentru secțiuni */
-section {
-    margin-bottom: 60px;
-}
-
 /* General Styles */
-#hero {
-    position: relative;
-    overflow: hidden;
-    height: 100vh; /* Full viewport height */
-}
-
-.back-img {
-    position: relative;
-    height: 100%;
-    width: 100%;
-}
-
-.back-img img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    filter: brightness(0.7); /* Slightly darken the image for better text visibility */
-}
-
-.hero-overlay {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: #fff;
+.container {
+    margin-top: 120px;
     padding: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for text readability */
-    border-radius: 15px;
 }
 
-.hero-overlay h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    color: #fddb3a;
-}
-
-.hero-overlay p {
-    font-size: 1.2rem;
+.input-group {
     margin-bottom: 20px;
-    font-family: 'Roboto', sans-serif;
-    color: #fff;
 }
 
-.hero-overlay .cta {
-    display: inline-block;
-    padding: 10px 20px;
-    background: #fddb3a;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 10px;
-    font-weight: 700;
-    transition: background 0.3s ease;
-}
-
-.hero-overlay .cta:hover {
-    background: #d9b503;
-}
-
-/* Stilul pentru secțiunea biografie */
-.biography, .achievements, .fun-facts {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.biography:hover, .achievements:hover, .fun-facts:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-}
-
-.bio-content {
-    display: flex;
-    align-items: center;
-    gap: 20px;
-    flex-direction: row-reverse;
-}
-
-.bio-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-/* Stilul pentru titlurile secțiunilor */
-.biography h2, .achievements h2, .fun-facts h2 {
-    border-bottom: 2px solid #dcbc20;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
-
-/* Stilul pentru textul din secțiuni */
-.biography p, .achievements ul, .fun-facts ul {
-    font-size: 1em;
-    line-height: 1.5;
-}
-
-/* Stilul pentru listele din secțiuni */
-.achievements ul, .fun-facts ul {
-    list-style: disc;
-    padding-left: 20px;
-}
-
-.achievements ul li, .fun-facts ul li {
-    margin-bottom: 10px;
-}
-
-/* Stilul pentru citatul celebru */
-blockquote {
-    font-size: 1.4em;
-    width: 80%; /* Lățimea se ajustează pentru diferite dimensiuni de ecran */
-    max-width: 800px; /* Lățimea maximă a box-ului */
-    margin: 50px auto; /* Centrare orizontală */
-    font-family: 'Open Sans', sans-serif;
-    font-style: italic;
-    color: #555555;
-    padding: 1.2em 30px 1.2em 75px; /* Spațiu în interiorul box-ului */
-    border-left: 8px solid #f1c40f; /* Bordura din stânga */
-    background: #EDEDED; /* Culoarea de fundal */
-    line-height: 1.6;
-    position: relative; /* Necesare pentru pseudo-element */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adaugă o umbră subtilă */
-    border-radius: 10px; /* Colțuri rotunjite */
-  }
-  
-  /* Stilul pentru citatul celebru */
-  blockquote::before {
-    font-family: Arial, sans-serif;
-    content: "\201C"; /* Caracterul de ghilimele */
-    color: #f1c40f; /* Culoarea ghilimelei */
-    font-size: 4em; /* Dimensiunea ghilimelei */
-    position: absolute;
-    left: 10px;
-    top: -10px;
-  }
-  
-  /* Stilul pentru textul din citat */
-  blockquote span {
-    display: block;
-    color: #333333;
-    font-style: normal;
-    font-weight: bold;
-    margin-top: 1em;
-  }
-  
-/* Stilul pentru footer */
-footer {
+button {
     background-color: #2c3e50;
     color: #ecf0f1;
-    text-align: center;
-    padding: 20px 40px;
-    position: relative;
-    margin-top: 40px;
-    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-}
-
-footer p {
-    margin-bottom: 10px;
-}
-
-/* Stilul pentru butonul de scroll în sus */
-.scroll-to-top {
-    position: absolute;
-    right: 20px;
-    bottom: 20px;
-    background-color: #f39c12;
     border: none;
-    padding: 10px;
-    border-radius: 50%;
+    padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
+button:hover {
+    background-color: #34495e;
+}
+
+/* Footer */
+footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scroll-to-top {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    background-color: #f39c12;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
 .scroll-to-top:hover {
     background-color: #e67e22;
-}
-
-.scroll-to-top svg {
-    width: 24px;
-    height: 24px;
-    fill: #fff;
-}
-
-/* Schimbă culoarea header-ului când se face scroll */
-header.scrolled {
-    background-color: #1a252f;
 }

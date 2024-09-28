@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400&family=Poppins:wght@600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient background */
+    font-family: 'Chewy', sans-serif;
+}
+
+.container {
+    width: 50%;
+    height: 60vh;
+    border: 3px solid rgb(47, 29, 211);
+    border-radius: 10px;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 15px 15px 30px rgba(0, 0, 0, 0.3);
+    background-color: white; /* White background for container */
+}
+
+h1 {
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 40px;
+    margin: 0;
+    color: #3B2F2F; /* Dark color for the title */
+}
+
+#input {
+    font-size: 100px;
+    font-weight: 600;
+    padding: 15px 0;
+    margin: 10px;
+    color: #333; /* Dark color for the counter value */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Subtle text shadow */
+}
+
+#buttons {
+    display: flex;
+    gap: 20px;
+    margin-top: 30px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease; /* Transition effect */
+    color: white;
+    font-weight: bold;
+}
+
+#decrement {
+    background-color: #f79432;
+}
+
+#reset {
+    background-color: #FF0000;
+}
+
+#increment {
+    background-color: #229022;
+}
+
+/* Button hover effects */
+.btn:hover {
+    filter: brightness(90%);
+}
+
+@media only screen and (max-width: 475px) {
+    .container {
+        width: 80%;
+        height: auto;
+    }
+    #buttons {
+        flex-direction: column;
+    }
+    .btn {
+        padding: 5px;
+        font-size: 12px;
+    }
+    h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    #input {
+        font-size: 60px;
+    }
+}
+
+@media (min-width: 476px) and (max-width: 760px) {
+    #buttons {
+        flex-direction: column;
+    }
+    .btn {
+        padding: 10px;
+        font-size: 16px;
+    }
+}
